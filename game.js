@@ -13,7 +13,10 @@ $(document).ready(function(){
 		playersGuess = +$("#userGuess").val();
 
 		if(playersGuess === 0){ alert("Please input a number in the input field.");
-		} else{
+		} else if(playersGuess>100 || playersGuess<1){			
+			$("#userGuess").val('');  	
+			alert("Please input a number between 1 and 100")
+	} else{
 			$('#feedback').css({'display':'block'});
 			playersGuessSubmission();
 		}
