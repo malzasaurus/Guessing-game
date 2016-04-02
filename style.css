@@ -1,26 +1,33 @@
-
-main{
-	padding: 5%;
+img{
+	height: 150px;
+	width: auto;
+}
+#end_win, #end_lose{
+	height: 150px;
+	margin: 10px;
+	display: none;
+}
+#feedback{
+	/*align text vertically*/
+	background-color: rgba(0, 0, 0, .75);
+	color: white;
+	border-radius: 5px;
+	width: 600px;
+	height: 75px;
+	padding: 15px;
+	margin: auto;
+	display: none;
 }
 section{
 	text-align: center;
-	font-family: 'Amatic SC', cursive;
-	font-style: bold;
+	font-family: 'Patrick Hand SC', cursive;
 }
-
 header, footer {
 	color: white;
-	padding: 2%;
-	width: 100%;
-	margin: auto;
+	padding: 1%;
 }
 header{
-	background-color: black;
-	height: 10%;
-}
-footer{
-	position: relative;
-	bottom: 1px;
+	background-color: black;	
 }
 body{
 	/*I'm going to link this to a filepath once it is "live"*/
@@ -30,43 +37,41 @@ body{
 .instructions{
 	background-color: rgba(249, 242, 236, .75);
 	border-radius: 10px;
-	opacity: 50%;
-	width: 600px;
+	width: 800px;
 	padding: 5px;
-}
-.guess{
-	margin: 10px 2px 10px 2px;
-	display: inline-block;
-
-}
-.options{
-	margin: 5px;
-	display: inline-block;	
-}
-div{
-	margin: 20px auto 20px auto;
+	display: block;
+	margin:20px auto 20px auto;
 }
 input{
-	width: 150px;
-	height: 50px;
+	width: 200px;
+	height: 75px;
 	text-align: center;
 	border: 2px double black;
+	font-size: 20px;
 }
 button{
 	border-radius: 5px;
-	width: 100px;
 	box-shadow: 3px 3px 5px #000;
 	background-color: #ADC57B;
 	transition: all 0.1s ease-in-out;
-	position: relative;
-	top: auto;
+}
+button.guess{
+	width: 150px;
+	height: 60px;
+	font-size: 20px;
+}
+button.options{
+	width: 100px;
+}
+ul li{
+	display: inline-block;
+	margin: 5px;
 }
 @font-face {
-      font-family: "Amatic SC";
+      font-family: 'Patrick Hand SC';
       font-style: normal;
       font-weight: normal;
  }
-
 button:hover{
 	background-color: black;
 	color: white;

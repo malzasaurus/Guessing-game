@@ -6,8 +6,7 @@
 		<title>Mallory's Guessing Game</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700,400' rel='stylesheet' type='text/css'>
-
+		<link href='https://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<section>
@@ -19,19 +18,34 @@
 					<h1>Can you guess what the computer is thinking?</h1>
 					<h3>Input a number between 1 and 100 and see if you can guess the computer's number</h3>
 				</div>
+				<div class="guessSection">
+					<ul>
+						<li>
+							<input class="guess" id="userGuess" type = "number" autofocus required placeholder="Input a number between 1 and 100" pattern = "[0-9]" />
+						</li>
+						<li>
+							<button class="guess">Submit Guess</button>
+						</li>
+					</ul>
+				</div>
+				<div class="optionSection">
+					<ul>
+						<li class="again">
+							<button class="options">New Session?</button>
+						</li>
+						<li class="hint">
+							<button class="options">Need a Hint?</button>
+						</li>
+					</ul>
+				</div>
 				<div>
-					<div class="guess">
-						<input type = "number" autofocus required placeholder = "Input a number between 1 and 100" pattern = "[0-9]" />
-					</div>
-					<div class="guess">
-						<button>Submit Guess</button>
-					</div>
+					<h3 id="feedback"></h3>
 				</div>
-				<div class="options">
-					<button>Start a New Session</button>
+				<div id="end_win">
+					<img src="https://media.giphy.com/media/3tEZki3VLrZ9C/giphy.gif">
 				</div>
-				<div class="options">
-					<button>Need a Hint?</button>
+				<div id="end_lose">
+					<img src="http://3.bp.blogspot.com/-Ecsn5KMJ88k/UsfI9PkdrZI/AAAAAAAAJVE/3ZII6AqXUg4/s1600/Pusheen18.png">
 				</div>
 			</main>			
 			<footer>
